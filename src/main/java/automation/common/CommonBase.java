@@ -19,4 +19,9 @@ public class CommonBase {
 		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
 		return driver;
 	}
+	public void closeDriver() {
+		if(driver!=null) {
+			driver.close();
+		}
+	}
 }

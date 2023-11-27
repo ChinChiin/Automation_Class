@@ -28,8 +28,6 @@ public void ClickOnCheckBox() {
 			clickOnThisChb.click();
 			System.out.println("check box click in this check box was checked");
 		}
-		
-		//
 }
 @Test
 public void clickOnMultipleCheckbox() throws InterruptedException {
