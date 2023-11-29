@@ -26,15 +26,18 @@ public class LoginPage {
 	WebElement loginButton = driver.findElement(CT_Accout.BUTTON_SIGNIN);
 	if(password.isEnabled()) {
 		loginButton.click();
+		}
 	}
-	WebElement userButton = driver.findElement(CT_Accout.BUTTON_USER);
-	if(userButton.isEnabled()) {
-		userButton.click();
-	}
-	WebElement signoutButton = driver.findElement(CT_Accout.BUTTON_SIGNOUT);
-	if(userButton.isEnabled()) {
-		signoutButton.click();
-	}
-	
+	public void SignOutFunction() throws InterruptedException {
+		WebElement userButton = driver.findElement(CT_Accout.BUTTON_USER);
+		if(userButton.isEnabled()) {
+			userButton.click();
+			Thread.sleep(2000);
+		}
+		WebElement signoutButton = driver.findElement(CT_Accout.BUTTON_SIGNOUT);
+		if(signoutButton.isEnabled()) {
+			signoutButton.click();
+			Thread.sleep(2000);
+		}
 	}
 }
