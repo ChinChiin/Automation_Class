@@ -59,7 +59,7 @@ public class TrizenPage {
 		dropboxPassenger.click();
 		addAdult.click();
 		dropboxPassenger.click();
-		buttonSearch.clear();
+		buttonSearch.click();
 	}
 	
 }
