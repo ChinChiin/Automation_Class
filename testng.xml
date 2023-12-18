@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuite">
+
+	<test name="autotest_class run on firefox">
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class name="Homework_AutoTest.BTVN_Day17_2" /> 
+			<class name="Homework_AutoTest.BTVN_Day18_1" /> 
+			<class name="Homework_AutoTest.BTVN_Day18_2"></class>
+		</classes>	
+	</test> 
+	<test name="autotest_class run on edge">
+		<parameter name="browser" value="edge"></parameter>
+		<classes>
+			<class name="Homework_AutoTest.BTVN_Day17_2" /> 
+			<class name="Homework_AutoTest.BTVN_Day18_1" /> 
+			<class name="Homework_AutoTest.BTVN_Day18_2"></class>
+		</classes>	
+	</test> 
+	
+</suite> <!-- Suite -->
+
+
